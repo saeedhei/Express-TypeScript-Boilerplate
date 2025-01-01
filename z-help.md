@@ -38,7 +38,7 @@ npm outdated
 npm update
 
 git add .
-git commit -m "nvmrc  updated"
+git commit -m "ESLint is integrated into the project."
 git push origin main
 
 

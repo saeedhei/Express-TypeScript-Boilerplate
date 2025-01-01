@@ -1,9 +1,11 @@
 // TS
-import express, { Request, Response, NextFunction } from 'express';
+// import express, { Request, Response, NextFunction } from 'express';
+import express, { Request, Response } from 'express';
 const router = express.Router();
 
 /* GET users listing. */
-router.get('/', (req: Request, res: Response, next: NextFunction): void => {
+// router.get('/', (req: Request, res: Response, next: NextFunction): void => {
+  router.get('/', (req: Request, res: Response): void => {
   
   const fetchData = async (url: string): Promise<any> => {
     try {
