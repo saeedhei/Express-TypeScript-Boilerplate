@@ -29,5 +29,5 @@ npm outdated
 npm update
 
 git add .
-git commit -m "Main src structure updated"
+git commit -m "env file added"
 git push origin main

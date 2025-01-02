@@ -108,6 +108,10 @@ Contributions are welcome! Please fork the repository, create a feature branch, 
 4. Push to the branch (`git push origin feature/your-feature`).
 5. Open a pull request.
 
+## Special Thanks
+
+A big thank you to [Arthur Varteressians](https://github.com/ArthurVarteressians) for helping me create this repository. Your support and expertise are greatly appreciated!
+
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
