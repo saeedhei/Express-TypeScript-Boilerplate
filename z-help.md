@@ -29,5 +29,5 @@ npm outdated
 npm update
 
 git add .
-git commit -m "README.md added"
+git commit -m "Main src structure updated"
 git push origin main
