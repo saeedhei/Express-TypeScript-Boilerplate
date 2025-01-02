@@ -29,5 +29,5 @@ npm outdated
 npm update
 
 git add .
-git commit -m "prettierrc and editorconfig added"
+git commit -m "README.md added"
 git push origin main
