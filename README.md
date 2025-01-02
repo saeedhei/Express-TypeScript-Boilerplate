@@ -75,18 +75,71 @@ The following scripts are available in `package.json`:
 ```plaintext
 Express-TypeScript-Boilerplate/
 ├── src/
-│   ├── bin/www.ts         # Entry point for the application.
-│   ├── routes/            # Route definitions.
-│   ├── views/             # Pug templates.
-│   ├── app.ts             # Express application setup.
-│   └── ...                # Additional directories and files.
-├── scripts/               # Utility scripts.
-├── dist/                  # Compiled JavaScript files (output directory).
-├── package.json           # Project metadata and dependencies.
-├── tsconfig.json          # TypeScript configuration.
-├── .eslintrc.js           # ESLint configuration.
-├── .prettierrc            # Prettier configuration.
-└── README.md              # Project documentation.
+│   ├── core/
+│   │   ├── config/
+│   │   │   ├── development.js
+│   │   │   ├── production.js
+│   │   │   ├── test.js
+│   │   │   └── index.js          # Consolidates configurations
+│   │   ├── utils/
+│   │   │   ├── validators.js     # Validation helpers
+│   │   │   ├── stringHelpers.js  # String manipulation helpers
+│   │   │   └── index.js          # Exports all utils
+│   │   ├── exceptions/
+│   │   │   ├── BaseException.js
+│   │   │   ├── NotFoundException.js
+│   │   │   └── index.js          # Exports all exceptions
+│   │   └── models/
+│   │       ├── BaseModel.js      # Base model (if needed)
+│   │       └── index.js          # Consolidates models
+│   ├── domain/
+│   │   ├── users/
+│   │   │   ├── services/
+│   │   │   │   ├── userService.js
+│   │   │   ├── controllers/
+│   │   │   │   ├── userController.js
+│   │   │   ├── repositories/
+│   │   │   │   ├── userRepository.js
+│   │   │   ├── models/
+│   │   │   │   ├── user.js
+│   │   │   ├── routes.js         # User-related routes
+│   │   │   └── index.js          # Exports all user modules
+│   │   ├── products/
+│   │   │   ├── services/
+│   │   │   │   ├── productService.js
+│   │   │   ├── controllers/
+│   │   │   │   ├── productController.js
+│   │   │   ├── repositories/
+│   │   │   │   ├── productRepository.js
+│   │   │   ├── models/
+│   │   │   │   ├── product.js
+│   │   │   ├── routes.js         # Product-related routes
+│   │   │   └── index.js          # Exports all product modules
+│   ├── infrastructure/
+│   │   ├── database/
+│   │   │   ├── connections.js    # Database connections (e.g., MongoDB, PostgreSQL)
+│   │   │   ├── migrations/       # Database migration files
+│   │   │   └── seeds/            # Seed data for development/testing
+│   │   ├── cache/
+│   │   │   ├── redisClient.js    # Redis cache client
+│   │   ├── messaging/
+│   │   │   ├── rabbitmqProducer.js  # RabbitMQ integration
+│   │   ├── third_party/
+│   │   │   ├── paymentGateway.js # Third-party integrations
+│   │   └── index.js              # Consolidates infrastructure modules
+│   ├── app.js                    # Application entry point
+│   ├── server.js                 # Server initialization
+│   └── package.json
+├── tests/
+│   ├── unit/
+│   │   ├── userService.test.js
+│   │   ├── ...
+│   ├── integration/
+│   │   ├── userController.test.js
+│   │   ├── ...
+│   ├── e2e/
+│       ├── ...
+└── package.json
 ```
 
 ## Technologies
