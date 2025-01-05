@@ -29,5 +29,5 @@ npm outdated
 npm update
 
 git add .
-git commit -m "Domain-driven Design added"
+git commit -m "app updated"
 git push origin main
