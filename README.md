@@ -77,65 +77,65 @@ Express-TypeScript-Boilerplate/
 ├── src/
 │   ├── core/
 │   │   ├── config/
-│   │   │   ├── development.js
-│   │   │   ├── production.js
-│   │   │   ├── test.js
-│   │   │   └── index.js          # Consolidates configurations
+│   │   │   ├── development.ts
+│   │   │   ├── production.ts
+│   │   │   ├── test.ts
+│   │   │   └── index.ts          # Consolidates configurations
 │   │   ├── utils/
-│   │   │   ├── validators.js     # Validation helpers
-│   │   │   ├── stringHelpers.js  # String manipulation helpers
-│   │   │   └── index.js          # Exports all utils
+│   │   │   ├── validators.ts     # Validation helpers
+│   │   │   ├── stringHelpers.ts  # String manipulation helpers
+│   │   │   └── index.ts          # Exports all utils
 │   │   ├── exceptions/
-│   │   │   ├── BaseException.js
-│   │   │   ├── NotFoundException.js
-│   │   │   └── index.js          # Exports all exceptions
+│   │   │   ├── BaseException.ts
+│   │   │   ├── NotFoundException.ts
+│   │   │   └── index.ts          # Exports all exceptions
 │   │   └── models/
-│   │       ├── BaseModel.js      # Base model (if needed)
-│   │       └── index.js          # Consolidates models
+│   │       ├── BaseModel.ts      # Base model (if needed)
+│   │       └── index.ts          # Consolidates models
 │   ├── domain/
 │   │   ├── users/
 │   │   │   ├── services/
-│   │   │   │   ├── userService.js
+│   │   │   │   ├── userService.ts
 │   │   │   ├── controllers/
-│   │   │   │   ├── userController.js
+│   │   │   │   ├── userController.ts
 │   │   │   ├── repositories/
-│   │   │   │   ├── userRepository.js
+│   │   │   │   ├── userRepository.ts
 │   │   │   ├── models/
-│   │   │   │   ├── user.js
-│   │   │   ├── routes.js         # User-related routes
-│   │   │   └── index.js          # Exports all user modules
+│   │   │   │   ├── user.ts
+│   │   │   ├── routes.ts         # User-related routes
+│   │   │   └── index.ts          # Exports all user modules
 │   │   ├── products/
 │   │   │   ├── services/
-│   │   │   │   ├── productService.js
+│   │   │   │   ├── productService.ts
 │   │   │   ├── controllers/
-│   │   │   │   ├── productController.js
+│   │   │   │   ├── productController.ts
 │   │   │   ├── repositories/
-│   │   │   │   ├── productRepository.js
+│   │   │   │   ├── productRepository.ts
 │   │   │   ├── models/
-│   │   │   │   ├── product.js
-│   │   │   ├── routes.js         # Product-related routes
-│   │   │   └── index.js          # Exports all product modules
+│   │   │   │   ├── product.ts
+│   │   │   ├── routes.ts         # Product-related routes
+│   │   │   └── index.ts          # Exports all product modules
 │   ├── infrastructure/
 │   │   ├── database/
-│   │   │   ├── connections.js    # Database connections (e.g., MongoDB, PostgreSQL)
+│   │   │   ├── connections.ts    # Database connections (e.g., MongoDB, PostgreSQL)
 │   │   │   ├── migrations/       # Database migration files
 │   │   │   └── seeds/            # Seed data for development/testing
 │   │   ├── cache/
-│   │   │   ├── redisClient.js    # Redis cache client
+│   │   │   ├── redisClient.ts    # Redis cache client
 │   │   ├── messaging/
-│   │   │   ├── rabbitmqProducer.js  # RabbitMQ integration
+│   │   │   ├── rabbitmqProducer.ts  # RabbitMQ integration
 │   │   ├── third_party/
-│   │   │   ├── paymentGateway.js # Third-party integrations
-│   │   └── index.js              # Consolidates infrastructure modules
-│   ├── app.js                    # Application entry point
-│   ├── server.js                 # Server initialization
+│   │   │   ├── paymentGateway.ts # Third-party integrations
+│   │   └── index.ts              # Consolidates infrastructure modules
+│   ├── app.ts                    # Application entry point
+│   ├── server.ts                 # Server initialization
 │   └── package.json
 ├── tests/
 │   ├── unit/
-│   │   ├── userService.test.js
+│   │   ├── userService.test.ts
 │   │   ├── ...
 │   ├── integration/
-│   │   ├── userController.test.js
+│   │   ├── userController.test.ts
 │   │   ├── ...
 │   ├── e2e/
 │       ├── ...
