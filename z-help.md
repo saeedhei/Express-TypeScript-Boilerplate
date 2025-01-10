@@ -29,5 +29,5 @@ npm outdated
 npm update
 
 git add .
-git commit -m "app updated"
+git commit -m ".prettierignore updated"
 git push origin main
